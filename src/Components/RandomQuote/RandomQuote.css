@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 250px;
+  background: #625ac4;
+  width: 800px;
+  border-radius: 15px;
+  height: 300px;
+}
+
+.quote {
+  padding: 60px 110px;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+.line {
+  width: 680px;
+  height: 1.5px;
+  background: white;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.author {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.icons {
+  display: flex;
+  gap: 40px;
+}
+.icons img {
+  cursor: pointer;
+  height: 36px;
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%; /* Adjust width for smaller screens */
+    margin-top: 100px; /* Adjust margin-top for smaller screens */
+    height: 350px; /* Change height to auto for responsiveness */
+  }
+
+  .quote {
+    padding: 40px 60px; /* Adjust padding for smaller screens */
+    font-size: 28px; /* Decrease font-size for smaller screens */
+  }
+
+  .line {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 500px; /* Set max-width for smaller screens */
+  }
+
+  .bottom {
+    flex-direction: column; /* Change flex-direction to column for smaller screens */
+    align-items: center; /* Center align items for smaller screens */
+    margin: 20px 0; /* Adjust margin for smaller screens */
+  }
+
+  .author {
+    font-size: 15px; /* Decrease font-size for smaller screens */
+    position: relative;
+    right: 50px;
+  }
+
+  .icons {
+    gap: 20px; /* Decrease gap for smaller screens */
+  }
+
+  .icons img {
+    position: relative;
+    left: 120px;
+    top: -20px;
+    height: 25px; /* Decrease height for smaller screens */
+  }
+}
